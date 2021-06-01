@@ -48,7 +48,7 @@
         header {
             margin: 0;
             height: 100px;
-            background-color: rgb(234, 170, 0);"
+            background-color: rgb(242, 169, 0);
         }
 
         .title {

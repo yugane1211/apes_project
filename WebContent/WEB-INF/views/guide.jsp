@@ -364,7 +364,7 @@ function showSlides6(n) {
        		<jsp:param value="${url }" name="url"/>
        </jsp:include></header>
 <section>      
-<div id="ccc" style="background-color: rgb(234, 170, 0);">
+<div id="ccc" style="background-color: rgb(242, 169, 0);">
 
             <div id="jk" style="color: rgb(55, 58, 54);">이용안내</div><br><br><br>
             <ul>

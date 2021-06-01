@@ -251,7 +251,7 @@ function deleteCheck(){
 		<button id="c6" onclick="location.href='fdupdate?post_num=${board.post_num}&userId=${user.user_id }&postId=${board.user_id }'">수정</button>
 		<button id="c7" onclick="deleteCheck()">삭제</button>
 
-		<button id="c8" onclick="location.href='freedom'">돌아가기</button><!-- 이쪽 주소 수정 -->
+		<button id="c8" onclick="history.go(-1);">돌아가기</button><!-- 이쪽 주소 수정 -->
 
 
 	</div>

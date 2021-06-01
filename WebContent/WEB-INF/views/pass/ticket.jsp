@@ -284,7 +284,7 @@ select{
 <input type="hidden" name="user_nickname" value="${sessionScope.userlogin.user_nickname }">
 <input type="hidden" name="user_login" value="${sessionScope.userlogin.user_login }">
 <div>
- <div id="ccc" style="background-color: rgb(234, 170, 0);">
+ <div id="ccc" style="background-color: rgb(242, 169, 0);">
        
           <div id="jk">이용권 구매</div>
           <div id="jksr"><span id="jks">정기권</span>
