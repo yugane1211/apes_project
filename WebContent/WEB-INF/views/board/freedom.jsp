@@ -183,7 +183,7 @@
 <br><br>
           <table border="1">
            <tr><th id="c3">글 번호</th><th id="c4">제목</th><th id="c5" style="background-color: rgb(55, 58, 54); color: rgb(234, 170, 0);">작성자</th><th id="c5" style="background-color: rgb(55, 58, 54); color: rgb(234, 170, 0);">날짜</th></tr>
-           <tr><th id="c5">공지</th><td id="c6" style="color: blue;"><a href="notice">게시글 작성 전 주의사항</a></td><td id="c5">운영자</td><td id="c5">21.05.10</td></tr>
+           <tr><th id="c5">공지</th><td id="c6" style="color: blue;"><a href="notice">2021년 5월 13일(목) 부터 적용되는 개정된 도로교통법 안내</a></td><td id="c5">운영자</td><td id="c5">21.05.10</td></tr>
            
            <c:forEach var="readboard" items="${list }">
            		<tr>

@@ -88,6 +88,11 @@ public class RentalControl {
 		String ride=request.getParameter("ride");//탈것 종류
 		int renoff_num=Integer.parseInt(request.getParameter("renoff_num"));//히든으로부터 대여소번호 가지고옴
 		String user_id=userlogin.getUser_id();
+		int rentedD = rentalservice.userRB(user_id)+rentalservice.userRK(user_id);
+		if(rentedD!=0) {
+			return "rental/rent_fail";
+		}
+		
 		if(ride.equals("bike")) {
 			int[] bic=rentalservice.getBikes(renoff_num);//자전거 번호를 얻음
 			int k=(int)Math.random()*bic.length;

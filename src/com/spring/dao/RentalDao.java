@@ -71,6 +71,18 @@ public class RentalDao {
 	}
 	
 	
+	
+	//특정 사용자가 빌린 장비 대수
+	public int userRB(String user_id) {
+		return rentalmapper.userRB(user_id);
+	}
+	public int userRK(String user_id) {
+		return rentalmapper.userRK(user_id);
+	}
+	
+	
+	
+	
 	//반납
 	//대여소 번호 존재여부 확인
 	public int officeExist(int renoff_num) {

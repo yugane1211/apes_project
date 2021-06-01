@@ -65,6 +65,18 @@ public interface RentalMapper {
 	public Rental oneRentK(int rental_num);
 	
 	
+	//특정 유저가 빌린 장비 대수 파악
+	@Select("select count(*) from rental_bicycle where user_id=#{param1} and rental_finish is null")
+	public int userRB(String user_id);
+	@Select("select count(*) from rental_kickboard where user_id=#{param1} and rental_finish is null")
+	public int userRK(String user_id);
+	
+	
+	
+	
+	
+	
+	
 	//반납
 	//대여소 번호 존재여부 확인
 	@Select("select count(*) from rental_office where renoff_num=#{param1}")

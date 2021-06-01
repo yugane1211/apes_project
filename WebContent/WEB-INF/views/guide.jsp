@@ -31,6 +31,7 @@ section{width: 100%; height: auto;}
     margin: -10px;
     position: relative;
     background-size: cover;
+    padding-bottom:70px;
 }
 
 #c {
@@ -65,19 +66,29 @@ section{width: 100%; height: auto;}
 }
 
 img {
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
 }
+    #a9{
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-left: 380px;
+      font-family: 'Noto Sans KR', sans-serif; 
+      color: rgb(55, 58,54);
+     
+    }
+    hr{opacity: 0.2;}
+    #gu{ padding-left: 200px; display: inline-block;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
-  max-height: 750px;
+  max-width: 600px;
+  max-height: 400px;
   position: relative;
   margin: auto;
 }
 .slideshow-container .mySlides img {
-  height: 500px;
+  height: 400px;
 }
 
 /* Hide the images by default */
@@ -130,7 +141,12 @@ img {
     <script>
   //슬라이드 스크립
 
-var slideIndex = 0; //slide index
+var slideIndex1 = 0; //slide index
+var slideIndex2 = 0; //slide index
+var slideIndex3 = 0; //slide index
+var slideIndex4 = 0; //slide index
+var slideIndex5 = 0; //slide index
+var slideIndex6 = 0; //slide index
 
 // HTML 로드가 끝난 후 동작
 window.onload=function(){
@@ -142,7 +158,13 @@ window.onload=function(){
 	
 	
 	
-  showSlides(slideIndex);
+  showSlides1(slideIndex1);
+  showSlides2(slideIndex2);
+  showSlides3(slideIndex3);
+  showSlides4(slideIndex4);
+  showSlides5(slideIndex5);
+  showSlides6(slideIndex6);
+
 
   /*// Auto Move Slide
   var sec = 3000;
@@ -152,30 +174,28 @@ window.onload=function(){
 
   }, sec);*/
 }
-
-
-// Next/previous controls
-function moveSlides(n) {
-  slideIndex = slideIndex + n
-  showSlides(slideIndex);
-}
-
 // Thumbnail image controls
 function currentSlide(n) {
   slideIndex = n;
   showSlides(slideIndex);
 }
 
-function showSlides(n) {
+// Next/previous controls
+function moveSlides1(n) {
+  slideIndex1 = slideIndex1 + n
+  showSlides1(slideIndex1);
+}
 
-  var slides = document.getElementsByClassName("mySlides");
+function showSlides1(n) {
+
+  var slides = document.getElementsByClassName("mySlides1");
   var dots = document.getElementsByClassName("dot");
   var size = slides.length;
 
   if ((n+1) > size) {
-    slideIndex = 0; n = 0;
+    slideIndex1 = 0; n = 0;
   }else if (n < 0) {
-    slideIndex = (size-1);
+    slideIndex1 = (size-1);
     n = (size-1);
   }
 
@@ -189,7 +209,151 @@ function showSlides(n) {
   slides[n].style.display = "block";
   dots[n].className += " active";
 }
+//Next/previous controls
+function moveSlides2(n) {
+  slideIndex2 = slideIndex2 + n
+  showSlides2(slideIndex2);
+}
 
+function showSlides2(n) {
+
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot");
+  var size = slides.length;
+
+  if ((n+1) > size) {
+    slideIndex2 = 0; n = 0;
+  }else if (n < 0) {
+    slideIndex2 = (size-1);
+    n = (size-1);
+  }
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[n].style.display = "block";
+  dots[n].className += " active";
+}
+//Next/previous controls
+function moveSlides3(n) {
+  slideIndex3 = slideIndex3 + n
+  showSlides3(slideIndex3);
+}
+
+function showSlides3(n) {
+
+  var slides = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("dot");
+  var size = slides.length;
+
+  if ((n+1) > size) {
+    slideIndex3 = 0; n = 0;
+  }else if (n < 0) {
+    slideIndex3 = (size-1);
+    n = (size-1);
+  }
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[n].style.display = "block";
+  dots[n].className += " active";
+}
+//Next/previous controls
+function moveSlides4(n) {
+  slideIndex4 = slideIndex4 + n
+  showSlides4(slideIndex4);
+}
+
+function showSlides4(n) {
+
+  var slides = document.getElementsByClassName("mySlides4");
+  var dots = document.getElementsByClassName("dot");
+  var size = slides.length;
+
+  if ((n+1) > size) {
+    slideIndex4 = 0; n = 0;
+  }else if (n < 0) {
+    slideIndex4 = (size-1);
+    n = (size-1);
+  }
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[n].style.display = "block";
+  dots[n].className += " active";
+}
+//Next/previous controls
+function moveSlides5(n) {
+  slideIndex5 = slideIndex5 + n
+  showSlides5(slideIndex5);
+}
+
+function showSlides5(n) {
+
+  var slides = document.getElementsByClassName("mySlides5");
+  var dots = document.getElementsByClassName("dot");
+  var size = slides.length;
+
+  if ((n+1) > size) {
+    slideIndex5 = 0; n = 0;
+  }else if (n < 0) {
+    slideIndex5 = (size-1);
+    n = (size-1);
+  }
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[n].style.display = "block";
+  dots[n].className += " active";
+}
+//Next/previous controls
+function moveSlides6(n) {
+  slideIndex6 = slideIndex6 + n
+  showSlides6(slideIndex6);
+}
+
+function showSlides6(n) {
+
+  var slides = document.getElementsByClassName("mySlides6");
+  var dots = document.getElementsByClassName("dot");
+  var size = slides.length;
+
+  if ((n+1) > size) {
+    slideIndex6 = 0; n = 0;
+  }else if (n < 0) {
+    slideIndex6 = (size-1);
+    n = (size-1);
+  }
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[n].style.display = "block";
+  dots[n].className += " active";
+}
     </script> 
 </head>
 <body>
@@ -204,49 +368,283 @@ function showSlides(n) {
 
             <div id="jk" style="color: rgb(55, 58, 54);">이용안내</div><br><br><br>
             <ul>
-	    <li class="menuG">
-	        <a><div id="a9">이용권 구매 안내</div></a>
-	        <ul class="hide">
-	            <br>
-	            <li>1. 메인페이지에서 상단바 클릭, 이용권 구매 클릭<br>2. 정기권을 원하면 정기권 티켓 클릭, 일일권을 원하면 일일권 티켓 클릭 한 후 정기권(일일권)종류 선택에서 이용하고 싶은 시간을 선택</li>
-	            <li>
+       <li class="menuG">
+           <a><div id="a9">이용권 구매 안내</div></a>
+           <ul class="hide">
+               <br>
+               <li id="gu">1. 메인페이지에서 상단바 클릭, 이용권 구매 클릭<br>2. 정기권을 원하면 정기권 티켓 클릭, 일일권을 원하면 일일권 티켓 클릭 한 후 정기권(일일권)종류 선택에서 이용하고 싶은 시간을 선택</li>
+               <li>
     <div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
+      <div class="mySlides1 fade">
         <div class="numbertext">1 / 3</div>
-        <img src="${root }resources/images/ticket_first.png" style="width:100%">
-        <div class="text">ACNE STUDIO</div>
+        <img src="${root}resources/images/이구1.png" >
+         
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides1 fade">
         <div class="numbertext">2 / 3</div>
-        <img src="${root }resources/images/ticket_second.PNG" style="width:100%">
-        <div class="text">ACNE STUDIO</div>
+        <img src="${root}resources/images/이구2.png" >
+         
       </div>
 
-      <div class="mySlides fade">
+      <div class="mySlides1 fade">
         <div class="numbertext">3 / 3</div>
-        <img src="${root }resources/images/ticket_third.PNG" style="width:100%">
-        <div class="text">ACNE STUDIO</div>
+        <img src="${root}resources/images/이구3.png">
+         
       </div>
-
+ 
       <!-- Next and previous buttons -->
-      <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+      <a class="prev" onclick="moveSlides1(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlides1(1)">&#10095;</a>
     </div>
     <br/>
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(0)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-
-    </div>
 </li>
 </ul>
+</li>
+<hr width="800px" color="gray">
 
+
+
+
+    <li class="menuG">
+        <a><div id="a9">문의게시판 서비스</div></a>
+        <ul class="hide">
+            <br>
+            <li li id="gu">1. 메인페이지에서 문의게시판 클릭<br> 2. 문의게시판에서 글쓰기 클릭하면 문의게시글 작성으로 넘어간다.<br>3. 문의게시글 작성 페이지를 작성 한 후 등록하면 글이 등록되고
+              문의게시판에 업로드되어 확인해 볼 수 있다.<br>4. 문의게시글에 미처 쓰지 못한 말이나 운영자의 답변에 더 궁금한게 있을 시 댓글쓰기를 이용할 수 있다.</li>
+            <li>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides2 fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="${root}resources/images/문의게시판.png"  >
+     
+  </div>
+
+  <div class="mySlides2 fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="${root}resources/images/문의2.png"  >
+     
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="moveSlides2(-1)">&#10094;</a>
+  <a class="next" onclick="moveSlides2(1)">&#10095;</a>
+</div>
+<br/>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+</li>
+</ul>
+</li>
+<hr width="800px" color="gray">
+
+
+    <li class="menuG">
+        <a><div id="a9">자유게시판 서비스</div></a>
+        <ul class="hide">
+            <br>
+            <li li id="gu">1. 메인페이지에서 자유게시판 클릭<br> 2. 자유게시판에서 글쓰기를 클릭하면 자유게시글 작성으로 넘어간다.<br>3. 자유게시글 작성 페이지를 작성 한 후 등록하면 글이 등록되고
+              자유게시판에 업로드되어 확인해 볼 수 있다.<br>4. 자유게시글에 미처 쓰지 못한 말이나 운영자의 답변에 더 궁금한게 있을 시 댓글쓰기를 이용할 수 있다.</li>
+            <li>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides3 fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="${root}resources/images/자게3.png"  >
+    
+  </div>
+
+  <div class="mySlides3 fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="${root}resources/images/자게1.png"  >
+
+  </div>
+
+  <div class="mySlides3 fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="${root}resources/images/자게2.png"  >
+
+  </div>
+
+  <div class="mySlides3 fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="${root}resources/images/자게4.png"  >
+
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="moveSlides3(-1)">&#10094;</a>
+  <a class="next" onclick="moveSlides3(1)">&#10095;</a>
+</div>
+<br/>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+</li>
+</ul>
+</li>
+<hr width="800px" color="gray">
+
+
+
+
+  <li class="menuG">
+      <a><div id="a9">테마코스 안내</div></a>
+      <ul class="hide">
+          <br>
+         
+          <li>
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides4 fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="${root}resources/images/테마1.png"  >
+   
+</div>
+
+<div class="mySlides4 fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="${root}resources/images/테마2.png"  >
+   
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="moveSlides4(-1)">&#10094;</a>
+<a class="next" onclick="moveSlides4(1)">&#10095;</a>
+</div>
+<br/>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(0)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+</li>
+</ul>
+</li>
+<hr width="800px" color="gray">
+
+
+
+
+  <li class="menuG">
+      <a><div id="a9">마이페이지 안내</div></a>
+      <ul class="hide">
+          <br>
+       
+          <li>
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides5 fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="${root}resources/images/마이페이지1.png"  >
+   
+</div>
+
+<div class="mySlides5 fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="${root}resources/images/마이페이지2.png"  >
+   
+</div>
+
+<div class="mySlides5 fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="${root}resources/images/마이페이지3.png"  >
+   
+</div>
+
+<div class="mySlides5 fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="${root}resources/images/마이페이지4.png"  >
+   
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="moveSlides5(-1)">&#10094;</a>
+<a class="next" onclick="moveSlides5(1)">&#10095;</a>
+</div>
+<br/>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(0)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+</li>
+</ul>
+</li>
+<hr width="800px" color="gray">
+
+
+
+
+  <li class="menuG">
+      <a><div id="a9">위치찾기, 반납, 대여 서비스 안내</div></a>
+      <ul class="hide">
+          <br>
+       
+          <li>
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides6 fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="${root}resources/images/위치찾기.png"  >
+   
+</div>
+
+<div class="mySlides6 fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="${root}resources/images/대여.png"  >
+   
+</div>
+
+
+<div class="mySlides6 fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="${root}resources/images/반납.png"  >
+   
+</div>
+<!-- Next and previous buttons -->
+<a class="prev" onclick="moveSlides6(-1)">&#10094;</a>
+<a class="next" onclick="moveSlides6(1)">&#10095;</a>
+</div>
+<br/>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(0)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+</li>
+</ul>
+</li>
+</ul>
     </div>
 </section>     
     <jsp:include page="footer.jsp"/>

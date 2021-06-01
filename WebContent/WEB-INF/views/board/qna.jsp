@@ -396,7 +396,7 @@ li{
 <br><br>
           <table border="1">
            <tr><th id="c3">글 번호</th><th id="c4">제목</th><th id="c5" style="background-color: rgb(55, 58, 54); color: rgb(234, 170, 0);">작성자</th><th id="c5" style="background-color: rgb(55, 58, 54); color: rgb(234, 170, 0);">날짜</th></tr>
-           <tr><th id="c5">공지</th><td id="c6" style="color: blue;"><a href="faq">게시글 작성 전 주의사항</a></td><td id="c5">운영자</td><td id="c5">21.05.10</td></tr>
+           <tr><th id="c5">공지</th><td id="c6" style="color: blue;"><a href="faq">문의게시글 작성 전 주의사항</a></td><td id="c5">운영자</td><td id="c5">21.05.10</td></tr>
            
            <c:forEach var="readboard" items="${listqna}">
            		<c:if test="${sessionScope.userlogin.user_id==readboard.user_id }">
@@ -529,7 +529,7 @@ li{
 								<li id="jksr"><br>
 								<span style="color: green;" id="pa">A.</span>
 								➀단계: 대여소 개설에 관한 의견 수렴은 해당 구청 담당부서(교통행정과)에서 실시합니다.<br>
-   								&nbsp;&nbsp;&nbsp;&nbsp;➁단계: 구청에서 의견수렴을 거쳐 대여소 후보지를 통보하여 주면 공단은 기술적인 가능성여부를 검토후, 최종 후보지를 협의, 선정합니다.<br>
+   								&nbsp;&nbsp;&nbsp;&nbsp;➁단계: 구청에서 의견수렴을 거쳐 대여소 후보지를 통보하여 주면 Apes는 기술적인 가능성여부를 검토후, 최종 후보지를 협의, 선정합니다.<br>
    								&nbsp;&nbsp;&nbsp;&nbsp;➂단계: 최종 후보지에 대하여 다시한번 현장 시민의견 수렴 후  대여소를 최종설치 합니다.
 									</li>
 							</ul></li>
@@ -545,7 +545,7 @@ li{
 								대여소 영구폐쇄가 아닌 임시폐쇄의 경우 추 후, 재개통 됩니다.<br>
 								&nbsp;&nbsp;&nbsp;&nbsp;폐쇄기간은 홈페이지 "공지사항"에 게시되어 있습니다. <br>
    								&nbsp;&nbsp;&nbsp;&nbsp;임시폐쇄는 관할 지방자치단체의 행사나 공사등의 사유를 접수받아 진행하므로, <br>
-   								&nbsp;&nbsp;&nbsp;&nbsp;공공대여소에서 임시폐쇄기간의 연장, 단축이 불가한점 양해 부탁드립니다. <br>
+   								&nbsp;&nbsp;&nbsp;&nbsp;대여소에서 임시폐쇄기간의 연장, 단축이 불가한점 양해 부탁드립니다. <br>
 									</li>
 							</ul></li>								
 					</ul>
