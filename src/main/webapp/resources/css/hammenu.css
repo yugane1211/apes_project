@@ -1,0 +1,56 @@
+/* reset */
+li {margin: 0; padding: 0; font-family: 'Noto Sans KR'; }
+li {list-style: none; font-size: 1.2em;}
+.a {text-decoration: none; color: rgb(55, 58, 54);}
+
+/* nav */
+#nav {position: fixed; left: 80%; top: 20px; width: 20%;}
+.menu {
+	float: right; 
+	padding-right: 10px; 
+	width: 200px; 
+	height: 100%; 
+	background-color: rgba(256, 256, 256, 0.5);
+	position: fixed;
+    top: 20%;
+    right:0%;
+    margin: -82px 0 0 -35px;
+    padding-top:1%;
+	}
+.menu > li {display: block;}
+.menu > li a {display: inline-block; padding: 20px 15px; color: rgb(55, 58, 54); font-weight: bold; font-family: 'Noto Sans KR';}
+.menu > li.active a {color: rgb(55, 58, 54);}
+.ham {position: absolute; top: 7px; right: 10px; width: 65px; height: 45px; cursor: pointer; z-index:4;}
+.menu{display: none;}
+
+/* icon-wrap */
+.ham span {
+  display: block;
+  background: rgb(55, 58, 54);
+  width: 42px;
+  height: 4px;
+  border-radius: 3px;
+  transition: margin 0.25s 0.25s, transform 0.25s ;
+}
+.ham .bar1 {margin-bottom: 8px;}
+.ham .bar2 {}
+.ham .bar3 {margin-top: 8px;}
+
+.ham.active span {
+  transition: margin 0.25s, transform 0.25s 0.25s;
+}
+
+.ham.active .bar1 {
+  margin-top: 8px;
+  margin-bottom: -4px;
+  transform: rotate(45deg);
+}
+.ham.active .bar2 {
+  transform: rotate(45deg);
+  
+}
+.ham.active .bar3 {
+  margin-top: -4px;
+  transform: rotate(135deg);
+}
+
