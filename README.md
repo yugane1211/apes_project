@@ -1,2 +1,2 @@
-# apes_project
-Spring MVC
+# Apes_Project - 혹성탈출
+
